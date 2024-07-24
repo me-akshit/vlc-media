@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            <img src="media/icons8-vlc.svg" alt="">
+            <span>VLC Media Player</span>
+        </div>
+
+        <div class="menu">
+            <span class="menu-itm" id="open-btn">Open
+                <input type="file" accept="video/*" id="video-input">
+            </span>
+
+            <span class="menu-itm">
+                Volume
+                <div class="menu-opt">
+                    <span id="volumeUp">volume up</span>
+                    <span id="volumeDown">volume down</span>
+                </div>
+            </span>
+
+
+            <span class="menu-itm">Speed
+                <div class="menu-opt">
+                    <span id="speedUp">speed up</span>
+                    <span id="speedDown">speed down</span>
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="main">
+        <video id="videoVu" class="videoVu"></video>
+        <div class="toast" id="toast"></div>
+    </div>
+    <div class="footer">
+        <div class="seekInfo">
+            <span id="currentTime"></span>
+            <input id="seekBar" class="seekBar" type="range" min="0" value="0" step="0.02">
+            <span id="totalDuration"></span>
+
+
+        </div>
+
+        <div class="controls">
+            <img src="media/backward-step-svgrepo-com.svg" alt="" id="backward">
+
+            <div class="play-pause">
+                <img src="media/play-svgrepo-com.svg" alt="" id="play">
+                <img src="media/pause-svgrepo-com.svg" alt="" id="pause">
+            </div>
+
+            <img src="media/forward-step-svgrepo-com.svg" alt="" id="forward">
+
+            <img src="media/expand-svgrepo-com.svg" alt="" id="expand">
+        </div>
+    </div>
+</body>
+
+</html>
